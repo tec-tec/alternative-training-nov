@@ -14,6 +14,7 @@
 		33B1AD861BFF7ADA00768382 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B1AD841BFF7ADA00768382 /* LaunchScreen.storyboard */; };
 		33BD3BC61C03286300DEB905 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BD3BC51C03286300DEB905 /* Restaurant.swift */; };
 		33BD3BC81C03426D00DEB905 /* RestaurantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BD3BC71C03426D00DEB905 /* RestaurantManager.swift */; };
+		33BD3BCC1C036E5000DEB905 /* RestaurantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BD3BCB1C036E5000DEB905 /* RestaurantsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		33B1AD871BFF7ADA00768382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33BD3BC51C03286300DEB905 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = Model/Restaurant.swift; sourceTree = "<group>"; };
 		33BD3BC71C03426D00DEB905 /* RestaurantManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantManager.swift; sourceTree = "<group>"; };
+		33BD3BCB1C036E5000DEB905 /* RestaurantsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				33BD3BC41C03285000DEB905 /* Model */,
 				33B1AD7B1BFF7ADA00768382 /* AppDelegate.swift */,
 				33B1AD7D1BFF7ADA00768382 /* ViewController.swift */,
+				33BD3BCB1C036E5000DEB905 /* RestaurantsTableViewController.swift */,
 				33B1AD7F1BFF7ADA00768382 /* Main.storyboard */,
 				33B1AD821BFF7ADA00768382 /* Assets.xcassets */,
 				33B1AD841BFF7ADA00768382 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33BD3BCC1C036E5000DEB905 /* RestaurantsTableViewController.swift in Sources */,
 				33B1AD7E1BFF7ADA00768382 /* ViewController.swift in Sources */,
 				33B1AD7C1BFF7ADA00768382 /* AppDelegate.swift in Sources */,
 				33BD3BC81C03426D00DEB905 /* RestaurantManager.swift in Sources */,
