@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Restaurant {
+struct Restaurant: CustomStringConvertible {
 
     enum RestoType: String {
         case Unknown
@@ -27,4 +27,8 @@ struct Restaurant {
     var adress: String
     var grade: Float
     var comment: String
+
+    var description: String {
+        return "Restaurant : " + name + ", type : " + type.rawValue
+    }
 }
