@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var restoNameTextField: UITextField!
+    @IBOutlet weak var restoTypeSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var restoAddressTextField: UITextField!
+    @IBOutlet weak var restoGradeSlider: UISlider!
+    @IBOutlet weak var restocommentTextView: UITextView!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,5 +26,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    @IBAction func saveRestaurant(sender: AnyObject) {
+    }
+
 }
 
