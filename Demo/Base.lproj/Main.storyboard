@@ -88,11 +88,21 @@
                                 <rect key="frame" x="146" y="411" width="34" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveRestaurant:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6M4-il-uyS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="restoAddressTextField" destination="uvG-NJ-76y" id="nT6-Gj-wNC"/>
+                        <outlet property="restoGradeSlider" destination="1la-gN-GF6" id="jYg-K5-HNc"/>
+                        <outlet property="restoNameTextField" destination="kG8-Qy-nPB" id="sV5-iT-IWP"/>
+                        <outlet property="restoTypeSegmentedControl" destination="3hB-MO-f35" id="BHt-nr-Eo7"/>
+                        <outlet property="restocommentTextView" destination="MUf-hp-RZx" id="Hip-mU-YMJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
