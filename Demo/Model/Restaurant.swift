@@ -16,6 +16,10 @@ struct Restaurant {
         case Indian
         case Japanese
         case French
+
+        static var allCases: [String] {
+            return [self.Unknown.rawValue,self.FastFood.rawValue,self.Indian.rawValue,self.Japanese.rawValue,self.French.rawValue,]
+        }
     }
 
     var name: String
