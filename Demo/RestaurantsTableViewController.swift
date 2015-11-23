@@ -22,7 +22,6 @@ class RestaurantsTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
 
         NSNotificationCenter.defaultCenter().addObserverForName(RestaurantManager.Constants.modelUpdatedNotificationName, object: nil, queue: NSOperationQueue.mainQueue()) { (note) -> Void in
-
             self.tableView.reloadData()
         }
     }
