@@ -15,6 +15,20 @@ class RestaurantManager {
         return restaurantArray
     }
 
+    init() {
+
+        createFakeRestaurants()
+    }
+
+    func createFakeRestaurants() {
+
+        restaurantArray.append(Restaurant(name: "Test", type: Restaurant.RestoType.Indian, adress: "10 Rue de la pompe, 75015 Paris", grade: 5, comment: ""))
+        restaurantArray.append(Restaurant(name: "Test2", type: Restaurant.RestoType.Indian, adress: "11 Rue de la pompe, 75015 Paris", grade: 5, comment: ""))
+        restaurantArray.append(Restaurant(name: "Test3", type: Restaurant.RestoType.Indian, adress: "12 Rue de la pompe, 75015 Paris", grade: 5, comment: ""))
+        restaurantArray.append(Restaurant(name: "Test4", type: Restaurant.RestoType.Indian, adress: "13 Rue de la pompe, 75015 Paris", grade: 5, comment: ""))
+        restaurantArray.append(Restaurant(name: "Test5", type: Restaurant.RestoType.Indian, adress: "10 Rue de la pompe, 75015 Paris", grade: 5, comment: ""))
+    }
+
     func addRestaurant(resto: Restaurant) {
 
         self.restaurantArray.append(resto)
