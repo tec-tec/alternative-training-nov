@@ -28,6 +28,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func saveRestaurant(sender: AnyObject) {
+
+        print(restoNameTextField.text)
+        print(restoTypeSegmentedControl.selectedSegmentIndex)
+        print(restoAddressTextField.text)
+        print(restoGradeSlider.value)
+        print(restocommentTextView.text)
     }
 
 }
