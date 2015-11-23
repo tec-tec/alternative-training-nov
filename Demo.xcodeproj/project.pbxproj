@@ -13,6 +13,7 @@
 		33B1AD831BFF7ADA00768382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33B1AD821BFF7ADA00768382 /* Assets.xcassets */; };
 		33B1AD861BFF7ADA00768382 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B1AD841BFF7ADA00768382 /* LaunchScreen.storyboard */; };
 		33BD3BC61C03286300DEB905 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BD3BC51C03286300DEB905 /* Restaurant.swift */; };
+		33BD3BC81C03426D00DEB905 /* RestaurantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BD3BC71C03426D00DEB905 /* RestaurantManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		33B1AD851BFF7ADA00768382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33B1AD871BFF7ADA00768382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33BD3BC51C03286300DEB905 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = Model/Restaurant.swift; sourceTree = "<group>"; };
+		33BD3BC71C03426D00DEB905 /* RestaurantManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				33BD3BC51C03286300DEB905 /* Restaurant.swift */,
+				33BD3BC71C03426D00DEB905 /* RestaurantManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			files = (
 				33B1AD7E1BFF7ADA00768382 /* ViewController.swift in Sources */,
 				33B1AD7C1BFF7ADA00768382 /* AppDelegate.swift in Sources */,
+				33BD3BC81C03426D00DEB905 /* RestaurantManager.swift in Sources */,
 				33BD3BC61C03286300DEB905 /* Restaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

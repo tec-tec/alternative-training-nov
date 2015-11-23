@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var restoAddressTextField: UITextField!
     @IBOutlet weak var restoGradeSlider: UISlider!
     @IBOutlet weak var restocommentTextView: UITextView!
+    let restoManager = RestaurantManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +50,8 @@ class ViewController: UIViewController {
         let resto =
         Restaurant(name: restoNameTextField.text!, type: restoType!, adress: restoAddressTextField.text!, grade: restoGradeSlider.value, comment: restocommentTextView.text)
 
-        print(resto)
+        restoManager.addRestaurant(resto)
+        print(restoManager.allRestaurants)
     }
 
 }
