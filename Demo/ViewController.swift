@@ -16,10 +16,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var restoGradeSlider: UISlider!
     @IBOutlet weak var restocommentTextView: UITextView!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        restoTypeSegmentedControl.removeAllSegments()
+        for (i, type) in Restaurant.RestoType.allCases.enumerate() {
+            restoTypeSegmentedControl.insertSegmentWithTitle(type, atIndex: i, animated: true)
+        }
+        restoTypeSegmentedControl.selectedSegmentIndex = 0
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,11 +34,22 @@ class ViewController: UIViewController {
 
     @IBAction func saveRestaurant(sender: AnyObject) {
 
-        print(restoNameTextField.text)
-        print(restoTypeSegmentedControl.selectedSegmentIndex)
-        print(restoAddressTextField.text)
-        print(restoGradeSlider.value)
-        print(restocommentTextView.text)
+        guard restoNameTextField.text?.isEmpty == false else {
+            return
+        }
+
+        guard restoAddressTextField.text?.isEmpty == false else {
+            return
+        }
+
+        let restoTypeString = restoTypeSegmentedControl.titleForSegmentAtIndex(restoTypeSegmentedControl.selectedSegmentIndex)!
+
+        let restoType = Restaurant.RestoType(rawValue: restoTypeString)
+
+        let resto =
+        Restaurant(name: restoNameTextField.text!, type: restoType!, adress: restoAddressTextField.text!, grade: restoGradeSlider.value, comment: restocommentTextView.text)
+
+        print(resto)
     }
 
 }
