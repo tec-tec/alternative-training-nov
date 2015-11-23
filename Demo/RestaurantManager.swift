@@ -42,6 +42,17 @@ class RestaurantManager {
 
         let notCenter = NSNotificationCenter.defaultCenter()
         notCenter.postNotificationName(Constants.modelUpdatedNotificationName, object: nil)
+        
+        let urlRequest = NSMutableURLRequest(URL: NSURL(string: "http://tectec.fr:3000/restaurant")!)
+        urlRequest.HTTPMethod = "POST"
+        let data = try? NSJSONSerialization.dataWithJSONObject(resto.dictionaryForJSON, options: NSJSONWritingOptions.PrettyPrinted)
+        urlRequest.HTTPBody = data
+
+        let session = NSURLSession.sharedSession().dataTaskWithRequest(urlRequest) { (data, response, error) -> Void in
+
+        }
+        
+        session.resume()
     }
 
     private func getWebserviceData() {

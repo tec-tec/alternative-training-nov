@@ -13,12 +13,17 @@ protocol Adressable {
     var adress: String { get }
 }
 
+protocol Syncable {
+
+    var dictionaryForJSON: [String:AnyObject] { get }
+}
+
 extension Adressable {
 
     var adress: String { return "1 Infinite Loop, Cupertino, CA" }
 }
 
-struct Restaurant: CustomStringConvertible, Adressable {
+struct Restaurant: CustomStringConvertible, Adressable, Syncable {
 
     enum RestoType: String {
         case Unknown
@@ -40,5 +45,10 @@ struct Restaurant: CustomStringConvertible, Adressable {
 
     var description: String {
         return "Restaurant : " + name + ", type : " + type.rawValue
+    }
+
+    var dictionaryForJSON: [String:AnyObject] {
+
+        return ["name":name, "type":type.rawValue, "address": adress, "grade":grade, "comment":comment]
     }
 }
