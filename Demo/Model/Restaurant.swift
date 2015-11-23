@@ -23,12 +23,12 @@ struct Restaurant: CustomStringConvertible, Adressable {
     enum RestoType: String {
         case Unknown
         case FastFood
-        case Indian
+        case Indonesian
         case Japanese
         case French
 
         static var allCases: [String] {
-            return [self.Unknown.rawValue,self.FastFood.rawValue,self.Indian.rawValue,self.Japanese.rawValue,self.French.rawValue,]
+            return [self.Unknown.rawValue,self.FastFood.rawValue,self.Indonesian.rawValue,self.Japanese.rawValue,self.French.rawValue,]
         }
     }
 
