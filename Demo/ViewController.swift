@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var restoAddressTextField: UITextField!
     @IBOutlet weak var restoGradeSlider: UISlider!
     @IBOutlet weak var restocommentTextView: UITextView!
-    let restoManager = RestaurantManager()
+    let restoManager = RestaurantManager.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()

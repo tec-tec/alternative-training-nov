@@ -10,12 +10,14 @@ import UIKit
 
 class RestaurantManager {
 
+    static let sharedInstance = RestaurantManager()
+
     private var restaurantArray = [Restaurant]()
     var allRestaurants: [Restaurant] {
         return restaurantArray
     }
 
-    init() {
+    private init() {
 
         createFakeRestaurants()
     }

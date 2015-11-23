@@ -10,7 +10,7 @@ import UIKit
 
 class RestaurantsTableViewController: UITableViewController {
 
-    let restoManager = RestaurantManager()
+    let restoManager = RestaurantManager.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
