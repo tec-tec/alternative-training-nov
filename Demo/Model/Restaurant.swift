@@ -8,7 +8,17 @@
 
 import UIKit
 
-struct Restaurant: CustomStringConvertible {
+protocol Adressable {
+
+    var adress: String { get }
+}
+
+extension Adressable {
+
+    var adress: String { return "1 Infinite Loop, Cupertino, CA" }
+}
+
+struct Restaurant: CustomStringConvertible, Adressable {
 
     enum RestoType: String {
         case Unknown
