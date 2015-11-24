@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3353760E1C0476BB005B2613 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3353760D1C0476BB005B2613 /* DetailsViewController.swift */; };
+		335376101C047833005B2613 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3353760F1C047832005B2613 /* MapKit.framework */; };
 		33B1AD7C1BFF7ADA00768382 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B1AD7B1BFF7ADA00768382 /* AppDelegate.swift */; };
 		33B1AD7E1BFF7ADA00768382 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B1AD7D1BFF7ADA00768382 /* ViewController.swift */; };
 		33B1AD811BFF7ADA00768382 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B1AD7F1BFF7ADA00768382 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		3353760D1C0476BB005B2613 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		3353760F1C047832005B2613 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		33B1AD781BFF7ADA00768382 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B1AD7B1BFF7ADA00768382 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33B1AD7D1BFF7ADA00768382 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				335376101C047833005B2613 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 		33B1AD6F1BFF7ADA00768382 = {
 			isa = PBXGroup;
 			children = (
+				3353760F1C047832005B2613 /* MapKit.framework */,
 				33B1AD7A1BFF7ADA00768382 /* Demo */,
 				33B1AD791BFF7ADA00768382 /* Products */,
 			);
