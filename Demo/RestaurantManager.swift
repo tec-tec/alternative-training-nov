@@ -10,6 +10,10 @@ import UIKit
 
 class RestaurantManager {
 
+    struct Constants {
+        static let modelUpdatedNotificationName = "modelUpdated"
+    }
+
     static let sharedInstance = RestaurantManager()
 
     private var restaurantArray = [Restaurant]()
@@ -34,6 +38,9 @@ class RestaurantManager {
     func addRestaurant(resto: Restaurant) {
 
         self.restaurantArray.append(resto)
+
+        let notCenter = NSNotificationCenter.defaultCenter()
+        notCenter.postNotificationName(Constants.modelUpdatedNotificationName, object: nil)
     }
 
 }

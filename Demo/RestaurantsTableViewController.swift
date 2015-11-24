@@ -20,6 +20,11 @@ class RestaurantsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+
+        NSNotificationCenter.defaultCenter().addObserverForName(RestaurantManager.Constants.modelUpdatedNotificationName, object: nil, queue: NSOperationQueue.mainQueue()) { (note) -> Void in
+
+            self.tableView.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
