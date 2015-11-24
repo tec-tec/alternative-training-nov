@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ovI-3e-nCL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zvQ-U0-zqG">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -119,7 +119,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestoCell" textLabel="1VR-O0-6Ki" detailTextLabel="h6Y-ai-BAj" style="IBUITableViewCellStyleSubtitle" id="7Va-ec-O3R">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Va-ec-O3R" id="8yc-lA-fun">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -155,10 +155,11 @@
                             <outlet property="delegate" destination="ovI-3e-nCL" id="Xa6-up-bih"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="F2n-FL-x5J"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p96-mJ-r4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="1107"/>
+            <point key="canvasLocation" x="1192" y="1107"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="64Q-Oj-CyT">
@@ -177,7 +178,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1HQ-UI-hGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1058" y="1105"/>
+            <point key="canvasLocation" x="1870" y="1105"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dxc-Op-FO7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zvQ-U0-zqG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fDP-At-6nU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ovI-3e-nCL" kind="relationship" relationship="rootViewController" id="x7x-GZ-HXE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ltH-xw-uMC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="1107"/>
         </scene>
     </scenes>
 </document>
