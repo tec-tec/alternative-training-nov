@@ -52,7 +52,12 @@ class ViewController: UIViewController {
 
         restoManager.addRestaurant(resto)
         print(restoManager.allRestaurants)
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
+    @IBAction func cancel(sender: AnyObject) {
+
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
 
