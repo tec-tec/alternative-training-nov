@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="436"/>
+            <point key="canvasLocation" x="1870" y="417"/>
         </scene>
         <!--Restaurants Table View Controller-->
         <scene sceneID="uzY-4C-6bJ">
@@ -155,7 +155,13 @@
                             <outlet property="delegate" destination="ovI-3e-nCL" id="Xa6-up-bih"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="F2n-FL-x5J"/>
+                    <navigationItem key="navigationItem" id="F2n-FL-x5J">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Sva-5f-vQM">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="showForm" id="uh0-NE-1G2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p96-mJ-r4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
