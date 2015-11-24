@@ -10,6 +10,7 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    var aRestaurant: Restaurant!
     override func viewDidLoad() {
         super.viewDidLoad()
 

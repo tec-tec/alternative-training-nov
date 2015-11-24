@@ -43,4 +43,22 @@ class RestaurantsTableViewController: UITableViewController {
 
         return cell
     }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "showDetails" {
+
+            guard let cell = sender as? UITableViewCell else {
+                return
+            }
+
+            guard let indexPath = tableView.indexPathForCell(cell) else {
+                return
+            }
+
+            if let vc = segue.destinationViewController as? DetailsViewController {
+                vc.aRestaurant = restoManager.allRestaurants[indexPath.row]
+            }
+        }
+    }
 }
