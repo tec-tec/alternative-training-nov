@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -154,7 +155,10 @@
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <segue destination="Q39-2a-9ms" kind="show" identifier="showDetails" id="oHl-Ui-Pi6"/>
+                                    <segue destination="Q39-2a-9ms" kind="show" identifier="showDetails" id="oHl-Ui-Pi6">
+                                        <segue key="commit" inheritsFrom="parent" id="AVA-rv-DIf"/>
+                                        <segue key="preview" inheritsFrom="commit" id="gMh-NE-fOG"/>
+                                    </segue>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -248,4 +252,7 @@
             <point key="canvasLocation" x="380" y="1107"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="oHl-Ui-Pi6"/>
+    </inferredMetricsTieBreakers>
 </document>
