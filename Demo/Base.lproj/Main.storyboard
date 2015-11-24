@@ -145,6 +145,9 @@
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <segue destination="Q39-2a-9ms" kind="show" identifier="showDetails" id="oHl-Ui-Pi6"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
